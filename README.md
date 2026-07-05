@@ -150,10 +150,6 @@ npm run preview
 ![Products](./screenshots/billing.png)
 ---
 
-## License
-
-This project is licensed under the MIT License.
-
 ---
 
 ## Author
