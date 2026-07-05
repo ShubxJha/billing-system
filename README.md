@@ -1,16 +1,161 @@
-# React + Vite
+# Billing Software
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern billing and invoice management application built with **React** and **Vite**. The application helps manage products, customers, generate invoices, and maintain inventory using browser local storage.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+* 📦 Product Management
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+  * Add, edit, and delete products
+  * Track product price, GST, and stock
+  * Low stock monitoring
 
-## Expanding the ESLint configuration
+* 👥 Customer Management
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+  * Add, edit, and delete customers
+  * Store customer details for invoicing
+
+* 🧾 Invoice Generation
+
+  * Create professional invoices
+  * Automatic GST calculation
+  * Grand total calculation
+  * Invoice preview before printing
+
+* 📊 Dashboard
+
+  * Total products
+  * Total customers
+  * Today's sales
+  * Total revenue
+  * Recent invoices
+  * Low stock products
+
+* 💾 Local Storage
+
+  * Data is automatically saved in the browser using Local Storage.
+  * No backend or database is required.
+
+* 🖨️ Print Support
+
+  * Printable invoice layout
+  * Clean invoice preview
+
+---
+
+## Tech Stack
+
+* React
+* Vite
+* JavaScript (ES6+)
+* HTML5
+* CSS3
+* React Router DOM
+
+---
+
+## Project Structure
+
+```text
+src/
+│
+├── components/
+├── pages/
+├── assets/
+├── App.jsx
+├── main.jsx
+└── index.css
+
+public/
+
+package.json
+vite.config.js
+```
+
+---
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone <repository-url>
+```
+
+Navigate to the project directory:
+
+```bash
+cd billing-software
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Open your browser and visit:
+
+```text
+http://localhost:5173
+```
+
+---
+
+## Build for Production
+
+```bash
+npm run build
+```
+
+Preview the production build:
+
+```bash
+npm run preview
+```
+
+---
+
+## Future Improvements
+
+* Authentication and user accounts
+* Database integration
+* Cloud synchronization
+* PDF invoice export
+* Barcode support
+* Product categories
+* Sales reports and analytics
+* Dark mode
+* Backup and restore
+* Role-based access
+
+---
+
+## Screenshots
+
+#### Dashboard
+
+![Dashboard](./screenshots/dashboard.png)
+
+#### Billing
+
+![Products](./screenshots/billing.png)
+---
+
+## License
+
+This project is licensed under the MIT License.
+
+---
+
+## Author
+
+Developed by **Shubham Jha**.
