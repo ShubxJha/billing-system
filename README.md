@@ -1,5 +1,9 @@
 # Billing Software
 
+> **🚧 Work in Progress**
+>
+> This project is currently under active development. Features, UI, and functionality are continuously being improved. Some modules may be incomplete or subject to change.
+
 A modern billing and invoice management application built with **React** and **Vite**. The application helps manage products, customers, generate invoices, and maintain inventory using browser local storage.
 
 ---
