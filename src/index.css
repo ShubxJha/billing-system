@@ -1,0 +1,110 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI, sans-serif;
+}
+
+body{
+    background:rgb(237, 242, 247);
+    padding:30px;
+    min-height:100vh;
+}
+
+/* React Root Container */
+
+#root{
+    /* display:flex; */
+    min-height:90vh;
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+/* Responsive Layout */
+
+@media (max-width:1024px){
+
+    #root{
+        flex-direction:column;
+        overflow:auto;
+    }
+
+    .sidebar{
+        width:100%;
+    }
+
+    .menu{
+        margin-bottom:30px;
+    }
+
+    .header{
+        grid-template-columns:1fr;
+        gap:15px;
+    }
+
+    .invoice-date{
+        text-align:left;
+    }
+
+    .customer-info{
+        grid-template-columns:1fr;
+    }
+
+    .product-row{
+        grid-template-columns:1fr;
+    }
+
+    .content{
+        flex-direction:column;
+    }
+
+    .summary{
+        width:100%;
+    }
+}
+
+/* Print Styles */
+
+@media print{
+
+    .no-print{
+        display:none !important;
+    }
+
+    @page{
+        size:A4;
+        margin:10mm;
+    }
+
+    body{
+        background:white;
+        padding:0;
+        margin:0;
+    }
+
+    #root{
+        display:block;
+        min-height:auto;
+        box-shadow:none;
+        border-radius:0;
+        overflow:visible;
+    }
+
+    .sidebar{
+        display:none;
+    }
+
+    .main{
+        width:100%;
+        padding:0;
+    }
+
+    .customer-info input,
+    .product-row input{
+        border:none;
+        background:none;
+        outline:none;
+    }
+}

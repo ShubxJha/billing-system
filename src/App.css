@@ -1,0 +1,27 @@
+.app-container{
+    display:flex;
+    flex-direction: column;
+}
+
+.content-area{
+    display:flex;
+    /* flex: 1; */
+}
+
+.main-layout{
+    display:flex;
+    flex:1;
+    flex-direction:column;
+
+    min-height: 100vh;
+
+    transition: margin-left 0.3s ease;
+}
+
+.main-layout.sidebar-open{
+    margin-left: 220px;
+}
+
+.main-layout.sidebar-closed{
+    margin-left: 0;
+}

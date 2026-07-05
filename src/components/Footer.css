@@ -1,0 +1,7 @@
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 20px;
+    height: 200px;
+    border-top: 2px solid rgb(221, 221, 221);
+}
